@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "description": "一个基于graphql与koa的简单server-demo",
   "author": "foora",
+  "keywords": [
+    "graphql",
+    "koa",
+    "demo",
+    "server"
+  ],
   "scripts": {
-    "server": "node app.js"
+    "server": "node app.js",
+    "test": "jest --forceExit",
+    "test-cov": "jest --forceExit --coverage"
   },
   "repository": {
     "type": "git",
@@ -14,12 +22,6 @@
   "bugs": {
     "url": "https://github.com/foora/graphql-easy-demo/issues"
   },
-  "keywords": [
-    "graphql",
-    "koa",
-    "demo",
-    "server"
-  ],
   "license": "MIT",
   "dependencies": {
     "graphql": "^0.11.3",
@@ -28,6 +30,21 @@
     "koa-router": "^7.2.1"
   },
   "devDependencies": {
-    "eslint-config-foora": "foora/eslint-config-foora"
+    "eslint-config-foora": "foora/eslint-config-foora",
+    "jest": "^21.1.0"
+  },
+  "engines": {
+    "node": ">= 7.6.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/test/**.test.js"
+    ],
+    "bail": true,
+    "testEnvironment": "node",
+    "coverageReporters": [
+      "text-summary",
+      "lcov"
+    ]
   }
 }

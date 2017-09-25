@@ -5,6 +5,7 @@
 
 ## 安装
 
+> node version >= 7.60
 ```
 1.
 git clone https://github.com/foora/graphql-easy-demo.git
@@ -30,4 +31,12 @@ curl -XPOST -d "graphqlStr=mutation rootMutationType{updateCount}" http://localh
 
 curl -XPOST -d "graphqlStr={count item(id: 4){id name price}}" http://localhost:3000/graphql
 // {"data":{"count":2,"item":{"id":4,"name":"item4","price":"20.00"}}}
+```
+
+## 测试
+
+```
+npm run test // without coverage
+
+npm run test-cov   // with coverage
 ```
