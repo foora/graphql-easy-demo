@@ -1,0 +1,33 @@
+{
+  "name": "graphql-easy-demo",
+  "version": "1.0.0",
+  "description": "一个基于graphql与koa的简单server-demo",
+  "author": "foora",
+  "scripts": {
+    "server": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foora/graphql-easy-demo.git"
+  },
+  "homepage": "https://github.com/foora/graphql-easy-demo#readme",
+  "bugs": {
+    "url": "https://github.com/foora/graphql-easy-demo/issues"
+  },
+  "keywords": [
+    "graphql",
+    "koa",
+    "demo",
+    "server"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "graphql": "^0.11.3",
+    "koa": "^2.3.0",
+    "koa-body": "^2.3.0",
+    "koa-router": "^7.2.1"
+  },
+  "devDependencies": {
+    "eslint-config-foora": "foora/eslint-config-foora"
+  }
+}
