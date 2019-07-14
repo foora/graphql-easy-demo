@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "eslint-config-foora": "foora/eslint-config-foora",
-    "jest": "^21.1.0"
+    "jest": "^24.8.0"
   },
   "engines": {
     "node": ">= 7.6.0"
